@@ -1,0 +1,68 @@
+html, body {
+  overscroll-behavior-y: contain; /* Prevents pull-to-refresh on mobile */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Prevents scrollbars on the body */
+  touch-action: none; /* Disables default touch actions like pinch-zoom, double-tap-zoom */
+  -webkit-user-select: none; /* Safari/Chrome */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  user-select: none; /* Standard */
+  -webkit-tap-highlight-color: transparent; /* Removes tap highlight on iOS/Android */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+#canvas-container {
+  position: relative;
+}
+
+canvas {
+  display: block;
+  /* border: 1px solid black; */ /* Can be removed for a cleaner look on mobile */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensures canvas scales down to fit if window is smaller */
+}
+
+#restart-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  margin-top: 10px;
+}
+
+#restart-button:hover {
+  background-color: #45a049;
+}
+
+#restart-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  transform: translateY(1px);
+}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>化学麻将 (新规则)</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>化学麻将 (新规则)</h1>
+    <main>
+        <!-- p5.js canvas will be inserted here by sketch.js -->
+    </main>
+    <div class="controls">
+        <button id="formCompoundButton" style="display:none;">组成化合物 (碰)</button>
+        <button id="declareCompoundButton" style="display:none;">宣告组成 (自摸)</button>
+        <button id="skipButton" style="display:none;">跳过</button>
+        <button id="sortHandButton">自动理牌</button> <!-- New Sort Hand Button -->
+        <button id="discardButton" style="display:none;">出牌</button> <!-- New Discard Button -->
+    </div>
+    <div class="info-area">
+        <p id="gameMessage">游戏加载中...</p>
+    </div>
+    <div id="gameControls">
+        <button id="formCompoundButtonV3">化合</button>
+        <button id="discardActionButtonV3">出牌</button>
+        <button id="declareVictoryButtonV3">宣告胜利</button>
+        <button id="autoSortButtonV3">整理手牌</button>
+    </div>
+    <div id="gameMessageV3"></div>
+    <script src="sketch.js"></script>
+</body>
+</html>
+
